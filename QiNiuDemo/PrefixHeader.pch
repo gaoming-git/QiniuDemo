@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  QiNiuDemo
+//
+//  Created by gaoming on 2018/4/8.
+//  Copyright © 2018年 Raising. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define APP_URL @"http://itunes.apple.com/cn/lookup?id=1111111111" //id为你自己的appid
+
+/** 设置接口地址 */
+#define BASE_URL @"http://192.168.0.1/"
+/** 获取七牛token路径名 */
+#define BASE_URL_UPLOAD @"rongtongjygy/UploadQn.Json"
+
+//系统照片视频缓存路径
+#define PHOTOCACHEPATH [NSTemporaryDirectory() stringByAppendingPathComponent:@"photoCache"]
+//系统相册视频缓存路径
+#define VIDEOCACHEPATH [NSTemporaryDirectory() stringByAppendingPathComponent:@"videoCache"]
+//视频拍摄缓存路径
+#define TAKEVIDEOCACHEPATH [NSTemporaryDirectory() stringByAppendingPathComponent:@"takeVideoCache"]
+
+
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <QiniuSDK.h>
+#import "SLTTool.h"
+#import "RTProgressHUD.h"
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

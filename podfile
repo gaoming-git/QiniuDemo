@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+target 'QiNiuDemo' do
+  pod 'Qiniu', '~> 7.2.2'
+  pod 'SVProgressHUD', '~> 2.2.2'
+  pod 'AFNetworking', '~> 3.1.0'
+end
